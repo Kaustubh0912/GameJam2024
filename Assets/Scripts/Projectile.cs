@@ -7,6 +7,7 @@ public class Projectile : MonoBehaviour
     private float direction;
     private BoxCollider2D boxCollider;
     private Animator anim;
+    private float lifeTime;
 
     private void Awake()
     {
@@ -19,6 +20,12 @@ public class Projectile : MonoBehaviour
         if (hit) return;
         float movementSpeed = speed * Time.deltaTime*direction;
         transform.Translate(movementSpeed, 0, 0);
+
+        lifeTime += Time.deltaTime;
+        if(lifeTime > 5) 
+        {
+            gameObject.SetActive(false);
+        }
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
@@ -29,6 +36,7 @@ public class Projectile : MonoBehaviour
 
     public void SetDirection( float _direction)
     {
+        lifeTime = 0;
         direction = _direction;
         gameObject.SetActive(true);
         hit=false;
