@@ -91,8 +91,8 @@ public class PlayerController : MonoBehaviour
         return raycastHit2D.collider != null;
     }
 
-    private bool canAttack()
+    public bool canAttack()
     {
-        return isGrounded() && !onWall();
+        return  isGrounded() && !onWall();
     }
 }
