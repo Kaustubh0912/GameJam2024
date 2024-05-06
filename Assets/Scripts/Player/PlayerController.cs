@@ -72,7 +72,7 @@ public class PlayerController : MonoBehaviour
             wallJumpCooldown = 0;
             if(horizontalInput==0)
             {
-                body.velocity = new Vector2(-Mathf.Sign(transform.localScale.x) * 10, 6);
+                body.velocity = new Vector2(-Mathf.Sign(transform.localScale.x) * 12, 6);
                 transform.localScale= new Vector3(-Mathf.Sign(transform.localScale.x),transform.localScale.y, transform.localScale.z);
             }
             else
