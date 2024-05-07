@@ -29,6 +29,7 @@ public class Projectile : MonoBehaviour
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
+        Physics2D.IgnoreLayerCollision(10, 11);
         hit = true;
         boxCollider.enabled=false;
         anim.SetTrigger("Explode");
