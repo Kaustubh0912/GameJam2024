@@ -1,3 +1,4 @@
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class Door : MonoBehaviour
@@ -10,7 +11,7 @@ public class Door : MonoBehaviour
     {
         if(collision.tag=="Player")
         {
-            if (collision.transform.position.x < transform.position.x)
+            if (collision.transform.position.x < transform.position.x || collision.transform.position.y<transform.position.y)
                 cam.MoveToNewRoom(nextRoom);
             else
                 cam.MoveToNewRoom(previousRoom);
