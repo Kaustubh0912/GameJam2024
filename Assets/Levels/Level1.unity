@@ -670,13 +670,13 @@ BoxCollider2D:
     border: {x: 0, y: 0.02, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
     oldSize: {x: 0.44, y: 0.46}
-    newSize: {x: 13.585562, y: 0.45}
+    newSize: {x: 8, y: 0.45}
     adaptiveTilingThreshold: 0.5
     drawMode: 2
     adaptiveTiling: 1
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 13.58556, y: 0.46}
+  m_Size: {x: 8, y: 0.46}
   m_EdgeRadius: 0
 --- !u!1 &320487695
 GameObject:
@@ -855,7 +855,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7616548690372041209, guid: dc15f07375e9df3469e2d7ff25828d0a, type: 3}
       propertyPath: m_Size.x
-      value: 13.585562
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 7616548690372041209, guid: dc15f07375e9df3469e2d7ff25828d0a, type: 3}
       propertyPath: m_Size.y
@@ -875,7 +875,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7847222696932323757, guid: dc15f07375e9df3469e2d7ff25828d0a, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 25
+      value: 10.9986
       objectReference: {fileID: 0}
     - target: {fileID: 7847222696932323757, guid: dc15f07375e9df3469e2d7ff25828d0a, type: 3}
       propertyPath: m_LocalPosition.y
@@ -1889,13 +1889,13 @@ BoxCollider2D:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
     oldSize: {x: 0.07, y: 0.3}
-    newSize: {x: 0.07, y: 1.2557684}
+    newSize: {x: 0.07, y: 1.2674251}
     adaptiveTilingThreshold: 0.5
     drawMode: 2
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.07, y: 1.255768}
+  m_Size: {x: 0.07, y: 1.267425}
   m_EdgeRadius: 0
 --- !u!1001 &842129754
 PrefabInstance:
@@ -2927,11 +2927,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 270942187328777810, guid: 5bdcb16eb22f0eb4baad678a55875716, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 3.94
+      value: 3.9
       objectReference: {fileID: 0}
     - target: {fileID: 270942187328777810, guid: 5bdcb16eb22f0eb4baad678a55875716, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 3.77
+      value: 3.7
       objectReference: {fileID: 0}
     - target: {fileID: 270942187328777810, guid: 5bdcb16eb22f0eb4baad678a55875716, type: 3}
       propertyPath: m_LocalPosition.z
@@ -2977,6 +2977,10 @@ PrefabInstance:
       propertyPath: cam
       value: 
       objectReference: {fileID: 519420033}
+    - target: {fileID: 8929653762282698072, guid: 5bdcb16eb22f0eb4baad678a55875716, type: 3}
+      propertyPath: back
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8929653762282698072, guid: 5bdcb16eb22f0eb4baad678a55875716, type: 3}
       propertyPath: nextRoom
       value: 
@@ -3871,11 +3875,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4090700317579233255, guid: d4e82c66b91e867458a8b5ef58dfe660, type: 3}
       propertyPath: m_Size.y
-      value: 1.2557684
+      value: 1.2674251
       objectReference: {fileID: 0}
     - target: {fileID: 4090700317579233255, guid: d4e82c66b91e867458a8b5ef58dfe660, type: 3}
       propertyPath: m_DrawMode
       value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4090700317579233255, guid: d4e82c66b91e867458a8b5ef58dfe660, type: 3}
+      propertyPath: m_SortingLayer
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4090700317579233255, guid: d4e82c66b91e867458a8b5ef58dfe660, type: 3}
+      propertyPath: m_SortingLayerID
+      value: 839499297
       objectReference: {fileID: 0}
     - target: {fileID: 7895703338779559441, guid: d4e82c66b91e867458a8b5ef58dfe660, type: 3}
       propertyPath: m_LocalPosition.x
@@ -3883,7 +3895,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7895703338779559441, guid: d4e82c66b91e867458a8b5ef58dfe660, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.7148
+      value: 0.674
       objectReference: {fileID: 0}
     - target: {fileID: 7895703338779559441, guid: d4e82c66b91e867458a8b5ef58dfe660, type: 3}
       propertyPath: m_LocalPosition.z

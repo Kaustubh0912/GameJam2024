@@ -36,6 +36,7 @@ public class Health : MonoBehaviour
                 anim.SetTrigger("Die");
                 GetComponent<PlayerController>().enabled=false;
                 dead = true;
+                StartCoroutine(Death());
             }
         }
 
@@ -56,6 +57,11 @@ public class Health : MonoBehaviour
             yield return new WaitForSeconds(iFramesDuration / (numberOfFlashes * 2));
         }
         Physics2D.IgnoreLayerCollision(8, 9, false);
+    }
+    private IEnumerator Death()
+    {
+        yield return new WaitForSeconds(3);
+        gameObject.SetActive(false);
     }
     
 }
